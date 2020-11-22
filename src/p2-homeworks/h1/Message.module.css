@@ -1,0 +1,68 @@
+.message {
+
+    display: inline-block;
+
+    width: 500px;
+    height: 300px;
+
+
+}
+
+.message img {
+    margin-left: 10px;
+    margin-top: 150px;
+        width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+}
+
+.name {
+    display: inline-block;
+    font-family: "Arial Black";
+
+    color: darkkhaki;
+}
+
+.dialog {
+    margin-top: -100px;
+    float: right;
+    margin-right: 40px;
+
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    width: 300px;
+    background: darkslategray;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.dialog:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid darkslategray;
+    border-right: 12px solid transparent;
+    border-top: 12px solid darkslategray;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+.time {
+    display: inline-block;
+    font-family: "Times New Roman";
+
+    color: darkcyan;
+    font-size: 18px;
+}
+
+.text {
+    font-family: "Bell MT";
+    color: white;
+}

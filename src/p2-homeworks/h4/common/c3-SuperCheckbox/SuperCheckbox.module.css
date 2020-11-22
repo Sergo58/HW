@@ -1,0 +1,30 @@
+
+
+.checkbox {
+    position:relative;
+    padding-left:25px;
+}
+.checkbox input[type=checkbox] {
+    display:none;
+}
+.checkbox label:after {
+    content:'';
+    display:block;
+    height:14px;
+    width:14px;
+    outline:1px solid #939598;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.checkbox  {
+    outline:1px solid #939598;
+    border:2px solid #fff;
+    width:40px;
+    height:40px;
+    background-color:#63849F;
+}
+
+.spanClassName {
+
+}

@@ -1,0 +1,8 @@
+.Affairs {
+    padding: 30px;
+    display: flex;
+}
+
+.Affairs > div {
+    margin-right: 50px;
+}
