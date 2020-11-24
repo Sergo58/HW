@@ -1,0 +1,15 @@
+
+.SuperSelect  {
+    background-color: #0f2027;
+    margin: 10px;
+    color: white;
+    padding: 12px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+
+    outline: none;
+}
+
