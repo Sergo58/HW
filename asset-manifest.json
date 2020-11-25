@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/HW/static/css/main.a9be5395.chunk.css",
-    "main.js": "/HW/static/js/main.f6c98088.chunk.js",
-    "main.js.map": "/HW/static/js/main.f6c98088.chunk.js.map",
+    "main.css": "/HW/static/css/main.44ff0098.chunk.css",
+    "main.js": "/HW/static/js/main.cbb846eb.chunk.js",
+    "main.js.map": "/HW/static/js/main.cbb846eb.chunk.js.map",
     "runtime-main.js": "/HW/static/js/runtime-main.9e739d5d.js",
     "runtime-main.js.map": "/HW/static/js/runtime-main.9e739d5d.js.map",
     "static/js/2.69d86221.chunk.js": "/HW/static/js/2.69d86221.chunk.js",
     "static/js/2.69d86221.chunk.js.map": "/HW/static/js/2.69d86221.chunk.js.map",
     "index.html": "/HW/index.html",
-    "precache-manifest.86d69829e4fddcdbb31dc74e24ca9a5d.js": "/HW/precache-manifest.86d69829e4fddcdbb31dc74e24ca9a5d.js",
+    "precache-manifest.3e38554fe3496f365f7b4bb4f8aa9e0a.js": "/HW/precache-manifest.3e38554fe3496f365f7b4bb4f8aa9e0a.js",
     "service-worker.js": "/HW/service-worker.js",
-    "static/css/main.a9be5395.chunk.css.map": "/HW/static/css/main.a9be5395.chunk.css.map",
+    "static/css/main.44ff0098.chunk.css.map": "/HW/static/css/main.44ff0098.chunk.css.map",
     "static/js/2.69d86221.chunk.js.LICENSE.txt": "/HW/static/js/2.69d86221.chunk.js.LICENSE.txt",
     "static/media/close.png": "/HW/static/media/close.76099b43.png",
     "static/media/klipartz.com.png": "/HW/static/media/klipartz.com.b702be85.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.9e739d5d.js",
     "static/js/2.69d86221.chunk.js",
-    "static/css/main.a9be5395.chunk.css",
-    "static/js/main.f6c98088.chunk.js"
+    "static/css/main.44ff0098.chunk.css",
+    "static/js/main.cbb846eb.chunk.js"
   ]
 }
