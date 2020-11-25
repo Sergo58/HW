@@ -1,42 +1,49 @@
 import React, {useState} from "react";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import s from './Clock.module.css'
 
 function Clock() {
-    let Data = new Date();
-    let Hour = Data.getHours();
-    let Minutes = Data.getMinutes();
-    let Seconds = Data.getSeconds();
-let time=("Текущее время: " + Hour + ":" + Minutes + ":" + Seconds)
 
 
+let DATA=new Date()
     const [timerId, setTimerId] = useState<number>();
-    const [date, setDate] = useState<Date>();
+    const [date, setDate] = useState<Date>(DATA);
     const [show, setShow] = useState<boolean>(false);
 
     const stop = () => {
-        // stop
+        clearInterval(timerId);
+
     }
     const start = () => {
         stop();
         const id: number = window.setInterval(() => {
-            setDate(date)
+            setDate(new Date())
         }, 1000);
         setTimerId(id);
     }
 
     const onMouseEnter = () => {
-        // show
+        setShow(true)
     };
     const onMouseLeave = () => {
-        // close
+        setShow(false)
     };
 
-    const stringTime = time; // fix with date
-    const stringDate = Data; // fix with date
+    let Hour =  date.getHours();
+    let Minutes =  date.getMinutes();
+    let Seconds =  date.getSeconds();
+    let Year =  date.getFullYear();
+    let  Month =  date.getMonth()+1;
+    let Day =   date.getDate();
+
+
+    let toDay=( Day + " " + Month + " " + Year);
+    let stringTime = `${Hour>9?Hour:"0"+Hour }:${Minutes>9?Minutes:"0"+Minutes }:${Seconds>9?Seconds:"0"+Seconds }`; // fix with date
+    let stringDate=toDay ; // fix with date
 
     return (
         <div>
-            <div
+            <div className={s.clock}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -44,7 +51,7 @@ let time=("Текущее время: " + Hour + ":" + Minutes + ":" + Seconds)
             </div>
 
             {show && (
-                <div>
+                <div className={s.data} >
                     {stringDate}
                 </div>
             )}
