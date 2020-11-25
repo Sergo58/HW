@@ -8,7 +8,7 @@ type SuperRadioPropsType = DefaultRadioPropsType & {
     onChangeOption?: (option: any) => void
 }
 
-const SuperRadio: React.FC<SuperRadioPropsType> = (
+export const SuperRadio: React.FC<SuperRadioPropsType> = (
     {
         type, name,
         options, value,
@@ -47,4 +47,4 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     );
 }
 
-export default SuperRadio;
+
