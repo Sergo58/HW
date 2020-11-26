@@ -6,12 +6,13 @@ type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonE
 
 type SuperButtonPropsType = DefaultButtonPropsType & {
 
-    error:string
+    error: string
 }
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
-    {error,
-         className,
+    {
+        error,
+        className,
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {
