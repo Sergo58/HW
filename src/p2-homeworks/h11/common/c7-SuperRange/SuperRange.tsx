@@ -30,6 +30,8 @@ const SuperRange: React.FC<SuperRangePropsType> = (
                 setValue([+e.currentTarget.value, value2])
             }
         }
+// @ts-ignore
+
 
 
         console.log(value)
@@ -39,12 +41,14 @@ const SuperRange: React.FC<SuperRangePropsType> = (
 
     const finalRangeClassName = `${s.range} ${className ? className : ""}`;
 
+
     return (
         <>
             <input
 
                 value={value}
                 type={"range"}
+
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
 

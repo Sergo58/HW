@@ -40,7 +40,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 
             <div>
 
-                <Range value={value} onChange={onChangeHandler
+                <Range  value={value} onChange={onChangeHandler
                 }/>
             </div>
         </>

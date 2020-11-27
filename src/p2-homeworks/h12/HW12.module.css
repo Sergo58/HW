@@ -1,0 +1,65 @@
+.dark {
+    background: dimgrey;
+}
+
+.dark-text {
+    color: aliceblue;
+}
+
+.red {
+    background: lightcoral;
+}
+
+.red-text {
+    color: aqua;
+}
+
+.green {
+    background: lightgreen;
+}
+
+.green-text {
+    color: darkslateblue;
+}
+.black {
+    background: black;
+}
+
+.black-text {
+    color: white;
+}
+.aqua {
+    background: aqua;
+}
+
+.aqua-text {
+    color: #203a43;
+}
+.olivedrab {
+    background:olivedrab;
+}
+
+.olivedrab-text {
+    color: #65001c;
+}
+
+
+
+
+
+
+
+
+.SuperSelect  {
+    background-color: #0f2027;
+    margin: 10px;
+    color: white;
+    padding: 12px;
+    width: 200px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+
+    outline: none;
+}
