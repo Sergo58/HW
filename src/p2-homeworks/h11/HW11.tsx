@@ -2,8 +2,24 @@ import React, {useState} from "react";
 import SuperRange from "./common/c7-SuperRange/SuperRange";
 import SuperDoubleRange from "./common/c8-SuperDoubleRange/SuperDoubleRange";
 
+
 function HW11() {
-    const [value, setValue] = useState([20, 60])
+
+    const [value1, setValue1] = useState(30);
+    const [value2, setValue2] = useState(70);
+
+    function handler1(value: number) {
+        if (value <= value2) {
+            setValue1(value)
+        }
+
+
+    }
+
+    function handler(value: [number, number]) {
+        setValue1(value[0])
+        setValue2(value[1])
+    }
 
     return (
         <div>
@@ -12,24 +28,19 @@ function HW11() {
 
             {/*should work (должно работать)*/}
             <div>
-                <span>{value[0]}</span>
-                <SuperRange
-                    value={value[0]}
-                    value2={value[1]}
-                    setValue={setValue}
+                <span>{value1}</span>
+                <SuperRange onChangeRange={handler1} value={value1}
 
                 />
             </div>
 
             <div>
-                <span>{value[0]}</span>
-                <SuperDoubleRange value={[value[0], value[1]]}
-                                  setValue={setValue}
-
+                <span>{value1}</span>
+                <SuperDoubleRange onChangeRange={handler} value={[value1, value2]}
 
                     // сделать так чтоб value1 и value2 изменялось
                 />
-                <span>{value[1]}</span>
+                <span>{value2}</span>
             </div>
 
             <hr/>

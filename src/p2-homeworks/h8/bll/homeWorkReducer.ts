@@ -36,7 +36,7 @@ switch (action.payload){
         }
         case "check": {
 
-            return state.filter(p => p.age !>=action.payload)
+            return state.filter(p => p.age >=action.payload)
         }
         default: return state
     }
